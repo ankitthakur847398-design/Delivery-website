@@ -1,17 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nearest Delivery - Shop</title>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>QuickCart | Blinkit Style</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">Nearest Delivery</div>
-    <div class="container">
-        <div id="product-list" class="grid"></div>
+
+  <header>
+    <h1>QuickCart 🛒</h1>
+    <div class="cart">
+      Cart: <span id="cart-count">0</span>
     </div>
-    <script src="app.js"></script>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <h3>Milk</h3>
+      <p>₹50</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <h3>Bread</h3>
+      <p>₹40</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <h3>Eggs</h3>
+      <p>₹60</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
